@@ -1,0 +1,47 @@
+.gallery {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.gallery h1 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+.gallery p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.gallery-grid figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid figure:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-grid figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(44, 62, 80, 0.8);
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+}

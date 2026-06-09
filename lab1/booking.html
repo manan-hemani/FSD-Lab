@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/booking.css" />
+    <title>Request Booking</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Event Management Logo" width="100" />
+        <p>EventPlus</p>
+      </div>
+      <ul>
+        <li>
+          <a href="file:///D:/College%20Works/MCA%20CUCS/FSD/lab1/index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="file:///D:/College%20Works/MCA%20CUCS/FSD/lab1/about.html"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="file:///D:/College%20Works/MCA%20CUCS/FSD/lab1/contactUs.html"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a href="file:///D:/College%20Works/MCA%20CUCS/FSD/lab1/gallery.html"
+            >Gallery</a
+          >
+        </li>
+        <li>
+          <a href="file:///D:/College%20Works/MCA%20CUCS/FSD/lab1/booking.html"
+            >Request Booking</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Request Booking</h1>
+      <p>Please fill out the form below to request a booking:</p>
+    </div>
+    <div class="booking">
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="eventType">Event Type:</label>
+        <select id="eventType" name="eventType">
+          <option>Wedding</option>
+          <option>Corporate</option>
+          <option>Birthday</option>
+          <option>Concert</option>
+          <option>Other</option>
+        </select>
+
+        <label for="date">Event Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="details">Additional Details:</label>
+        <textarea id="details" name="details"></textarea>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </body>
+</html>
