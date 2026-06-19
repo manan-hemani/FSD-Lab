@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input,
+textarea,
+select {
+  font-family: "DM Sans", sans-serif;
+}
+
+.page {
+  display: none;
+}
+.page:target {
+  display: block;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav img {
+  width: 40px;
+  height: 40px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #f39c12;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo p {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* hero content for contact, gallery, and booking sections */
+.hero-content {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  color: #fff;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* form for contact and booking page */
+form {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "DM Sans", sans-serif;
+}
+form button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+form button:hover {
+  background: #d35400;
+}
+
+/* home page */
+.hero {
+  background: url("https://images.pexels.com/photos/19320117/pexels-photo-19320117.jpeg")
+    center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.intro {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  color: #fff;
+}
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.intro p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.services {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+.services h2 {
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+.service {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.service:hover {
+  transform: translateY(-5px);
+  background: #f39c12;
+  color: #fff;
+}
+
+.gallery-preview-home {
+  padding: 3rem 2rem;
+  background: #f39c12;
+  color: #fff;
+  text-align: center;
+}
+.gallery-preview-home h2 {
+  margin-bottom: 2rem;
+}
+.gallery-grid-home {
+  display: inline-block;
+  margin: 1rem;
+  max-width: 300px;
+}
+.gallery-grid-home img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+.gallery-grid-home img:hover {
+  transform: scale(1.05);
+}
+.gallery-grid-home p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+.gallery-preview-home button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+}
+.gallery-preview-home button:hover {
+  background: #34495e;
+}
+
+.testimonials {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+.testimonials h2 {
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+.testimonials blockquote {
+  max-width: 600px;
+  margin: 1rem auto;
+  font-style: italic;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-left: 5px solid #f39c12;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* about page */
+.about-us {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #f9f9f9;
+}
+.about-us h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+.about-us p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about-us-content img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.about-us-content p {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.main-content {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+.main-content h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.our-mvv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.mvv {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.mvv img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+.mvv h3 {
+  color: #f39c12;
+  margin-bottom: 0.5rem;
+}
+.mvv p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Booking page */
+.booking {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+/* Contact Us page */
+.contact-content {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.contact-details {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  max-width: 500px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.contact-details h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+.contact-details p {
+  margin: 0.5rem 0;
+}
+.contact-details a {
+  color: #f39c12;
+}
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* gallery page */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.gallery-grid figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.gallery-grid figure:hover img {
+  transform: scale(1.05);
+}
+.gallery-grid figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(44, 62, 80, 0.8);
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  width: 300px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.modal:target {
+  display: block;
+}
+.modal-content {
+  padding: 1rem;
+  text-align: center;
+}
+.close-modal {
+  display: inline-block;
+  margin-top: 10px;
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* web api geolocation */
+#displayLocation {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}

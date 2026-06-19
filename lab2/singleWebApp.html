@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="singleWebApp.css" />
+    <title>Event Plus</title>
+  </head>
+  <body>
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p>Thank you for reaching out! We will get back to you soon.</p>
+        <a href="#home" class="close-modal">X</a>
+      </div>
+    </div>
+
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Event Management Logo" width="100" />
+        <p>EventPlus</p>
+      </div>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+          <a href="#booking ">Request Booking</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HOME SECTION  -->
+
+    <section id="home" class="page">
+      <div class="home">
+        <section class="hero">
+          <h1>Making Every Event Memorable</h1>
+          <p>Your trusted partner for weddings, corporate events, and more.</p>
+        </section>
+
+        <section class="intro">
+          <h2>Welcome to EventPlus</h2>
+          <p>
+            We specialize in creating unforgettable experiences tailored to your
+            vision.
+          </p>
+        </section>
+
+        <section class="services">
+          <h2>Our Services</h2>
+          <div class="service-grid">
+            <div class="service">Weddings</div>
+            <div class="service">Corporate Events</div>
+            <div class="service">Birthdays</div>
+            <div class="service">Concerts</div>
+          </div>
+        </section>
+
+        <section class="gallery-preview-home">
+          <h2>Highlights</h2>
+          <div class="gallery-grid-home">
+            <img
+              src="https://images.pexels.com/photos/37828118/pexels-photo-37828118.jpeg"
+              alt="Wedding"
+            />
+            <p>Beautiful wedding moments captured.</p>
+          </div>
+          <div class="gallery-grid-home">
+            <img
+              src="https://images.pexels.com/photos/35042459/pexels-photo-35042459.jpeg"
+              alt="Corporate"
+            />
+            <p>Professional corporate events.</p>
+          </div>
+          <button><a href="#gallery">View Full Gallery</a></button>
+        </section>
+
+        <section class="testimonials">
+          <h2>What Our Clients Say</h2>
+          <blockquote>
+            "EventPlus made our wedding magical!" – Priya & Arjun
+          </blockquote>
+          <blockquote>
+            "Professional and flawless execution." – TechCorp
+          </blockquote>
+        </section>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION  -->
+
+    <section id="about" class="page">
+      <div class="about-us">
+        <h1>About Us</h1>
+        <p>
+          Welcome to our company! We are a team of passionate professionals
+          dedicated to providing the best services possible.
+        </p>
+        <div class="about-us-content">
+          <aside>
+            <img src="about_us.jpg" alt="Our Team" width="300" />
+          </aside>
+          <p>
+            We are a team of passionate professionals committed to delivering
+            innovative solutions and exceptional service. With diverse expertise
+            and a collaborative spirit, we help clients achieve their goals
+            while building lasting relationships. Guided by integrity and
+            customer focus, we strive to create meaningful impact and drive
+            growth for businesses and communities.
+          </p>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <h2>Our Mission, Vision, and Values</h2>
+        <div class="our-mvv">
+          <div class="mvv">
+            <img
+              src="https://images.pexels.com/photos/11022648/pexels-photo-11022648.jpeg"
+              alt="Mission"
+              width="300"
+              height="auto"
+            />
+            <h3>Our Mission</h3>
+            <p>
+              Our mission is to deliver high-quality products and services that
+              exceed our customers' expectations. We strive to create value for
+              our clients through innovation, integrity, and excellence.
+            </p>
+          </div>
+          <div class="mvv">
+            <img
+              src="https://images.pexels.com/photos/33137139/pexels-photo-33137139.jpeg"
+              alt="Value"
+              width="300"
+              height="auto"
+            />
+            <h3>Our Values</h3>
+            <p>
+              Our mission is to deliver high-quality products and services that
+              exceed our customers' expectations. We strive to create value for
+              our clients through innovation, integrity, and excellence.
+            </p>
+          </div>
+          <div class="mvv">
+            <img
+              src="https://images.pexels.com/photos/11022642/pexels-photo-11022642.jpeg"
+              alt="Vision"
+              width="300"
+              height="auto"
+            />
+            <h3>Our Vision</h3>
+            <p>
+              Our mission is to deliver high-quality products and services that
+              exceed our customers' expectations. We strive to create value for
+              our clients through innovation, integrity, and excellence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US SECTION  -->
+    <section id="contact" class="page">
+      <div class="hero-content">
+        <h1>Contact Us</h1>
+        <p>
+          We’d love to hear from you! Reach out using the form below or through
+          our contact details.
+        </p>
+      </div>
+      <div class="contact-content">
+        <form>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit"><a href="#modal">Send Message</a></button>
+        </form>
+      </div>
+      <div class="contact-details">
+        <h2>Our Office</h2>
+        <p>ABC Layout,Bengaluru, India</p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:xyz@example.com">xyz@example.com</a>
+        </p>
+        <p><strong>Phone:</strong> +91 1234567890</p>
+        <button onClick="getLocation()">Get your Location</button>
+        <p id="displayLocation"></p>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION  -->
+
+    <section id="gallery" class="page">
+      <div class="hero-content">
+        <h1>Our Gallery</h1>
+        <p>Explore highlights from our past events.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/37828118/pexels-photo-37828118.jpeg"
+            alt="Wedding Event"
+          />
+          <figcaption>Elegant Wedding Setup</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/35042459/pexels-photo-35042459.jpeg"
+            alt="Corporate Event"
+          />
+          <figcaption>Corporate Conference</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/17931469/pexels-photo-17931469.jpeg"
+            alt="Birthday Event"
+          />
+          <figcaption>Birthday Celebration</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/1613240/pexels-photo-1613240.jpeg"
+            alt="Concert Event"
+          />
+          <figcaption>Live Concert Night</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- BOOKING SECTION  -->
+
+    <section id="booking" class="page">
+      <div class="hero-content">
+        <h1>Request Booking</h1>
+        <p>Please fill out the form below to request a booking:</p>
+      </div>
+      <div class="booking">
+        <form>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="eventType">Event Type:</label>
+          <select id="eventType" name="eventType">
+            <option>Wedding</option>
+            <option>Corporate</option>
+            <option>Birthday</option>
+            <option>Concert</option>
+            <option>Other</option>
+          </select>
+
+          <label for="date">Event Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="details">Additional Details:</label>
+          <textarea id="details" name="details"></textarea>
+
+          <button type="submit">Submit Booking</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Event Management. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const x = document.getElementById("displayLocation");
+
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(success, error);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function success(position) {
+        x.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          "<br>Longitude: " +
+          position.coords.longitude;
+      }
+
+      function error() {
+        alert("Sorry, no position available.");
+      }
+    </script>
+  </body>
+</html>
