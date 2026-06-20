@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Event Booking</title>
+  </head>
+  <body>
+    <nav>
+      <p>Event Booking</p>
+      <div class="right">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Booking</a>
+      </div>
+    </nav>
+    <section id="home">
+      <header>
+        <h1>Welcome to the Event Booking Platform</h1>
+        <p>
+          Your one-stop solution for booking events and managing your schedule.
+        </p>
+      </header>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="services">Wedding</div>
+        <div class="services">Corporate Events</div>
+        <div class="services">Birthdays</div>
+        <div class="services">Concerts</div>
+      </div>
+    </section>
+    <section id="booking">
+      <h2>Book Your Event</h2>
+      <form id="booking-form">
+        <label for="name">Name<span>*</span></label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+        <label for="email">Email<span>*</span></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <label for="event-type">Event Type<span>*</span></label>
+        <select id="event-type" name="event-type" required>
+          <option value="" disabled selected>Select an event type</option>
+          <option value="wedding">Wedding</option>
+          <option value="corporate">Corporate Event</option>
+          <option value="birthday">Birthday</option>
+          <option value="concert">Concert</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="event-date">Event Date<span>*</span></label>
+        <input type="date" id="event-date" name="event-date" required />
+        <label for="additional-info">Additional Information</label>
+        <textarea
+          id="additional-info"
+          name="additional-info"
+          placeholder="Additional information"
+          rows="4"
+        ></textarea>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+    <footer>
+      <p>Made with ❤️ for Event Booking</p>
+    </footer>
+
+    <div id="modal">
+      <div id="modalContent">
+        <h2>Booking Confirmed!</h2>
+        <p>We will contact you soon.</p>
+        <button onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+    <script>
+      const form = document.getElementById("booking-form");
+      const modal = document.getElementById("modal");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (this.checkValidity()) {
+          modal.style.display = "flex";
+        }
+      });
+      function closeModal() {
+        modal.style.display = "none";
+        form.reset();
+      }
+    </script>
+  </body>
+</html>
