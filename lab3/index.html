@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script src="JS/App.js" defer></script>
+    <title>Book my Ticket</title>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR  -->
+    <header>
+      <nav class="site-nav">
+        <div class="nav-inner">
+          <a class="brand" href="#home">
+            <img src="Assests/logo.png" alt="Logo" class="logo" />
+            <span>Book my Ticket</span>
+          </a>
+          <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+          <ul class="nav-links">
+            <li>
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li>
+              <a href="#events" class="nav-link">Events</a>
+            </li>
+            <li>
+              <a href="#auth" class="nav-link">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HOME SECTION  -->
+    <main>
+      <section id="home" class="page active">
+        <div class="hero">
+          <h1>Making Every Event Memorable</h1>
+          <p class="lead">
+            Seamless ticketing for concerts, corporate events, weddings and
+            more.
+          </p>
+          <div class="hero-ctas">
+            <a href="#events" class="btn primary">View Events</a>
+            <a href="#about" class="btn ghost">Learn More</a>
+          </div>
+        </div>
+        <section class="intro">
+          <div class="container">
+            <h2>Welcome to Book my Ticket</h2>
+            <p class="muted">
+              We make event discovery and booking effortless curated events,
+              transparent pricing, and reliable organizers. Browse upcoming
+              shows, reserve seats, and get instant confirmations.
+            </p>
+          </div>
+        </section>
+        <section class="services container">
+          <h2>What we Offer</h2>
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="icon">🎭</div>
+              <h3>Stand-Up & Comedy</h3>
+              <p>Top comedians, intimate venues, and laugh-out-loud nights.</p>
+            </article>
+            <article class="service-card">
+              <div class="icon">🏢</div>
+              <h3>Corporate Event</h3>
+              <p>
+                Professional planning, AV support, and seamless attendee
+                management.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="icon">🎬</div>
+              <h3>Movie Premier</h3>
+              <p>
+                Exclusive screenings, red-carpet experiences and VIP packages.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="icon">🎵</div>
+              <h3>Concert & Live Music</h3>
+              <p>
+                From indie nights to stadium shows, find your next live
+                experience.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="upcoming" class="upcoming container">
+          <h2>Upcoming Events</h2>
+          <div class="events-grid">
+            <article class="event-card">
+              <img
+                src="https://images.pexels.com/photos/9547593/pexels-photo-9547593.jpeg"
+                alt="StandUp Comedy"
+              />
+              <div class="event-body">
+                <h3>Stand-Up Comedy</h3>
+                <p class="organizer">Organizer: Comedy Central</p>
+                <p class="price">Rs. 1,499</p>
+                <div class="card-actions">
+                  <button
+                    class="btn outline view-details"
+                    data-title="Stand-Up Comedy"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn primary open-book"
+                    data-title="Stand-Up Comedy"
+                  >
+                    Book Tickets
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="event-card">
+              <img
+                src="https://images.pexels.com/photos/38041486/pexels-photo-38041486.jpeg"
+                alt="Tech Week"
+              />
+              <div class="event-body">
+                <h3>London Tech Week</h3>
+                <p class="meta">Organizer: Elegant Affairs</p>
+                <p class="price">Free</p>
+                <div class="card-actions">
+                  <button
+                    class="btn outline view-details"
+                    data-title="London Tech Week"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn primary open-book"
+                    data-title="London Tech Week"
+                  >
+                    Book Tickets
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="event-card">
+              <img
+                src="https://images.pexels.com/photos/19451448/pexels-photo-19451448.jpeg"
+                alt="Corporate"
+              />
+              <div class="event-body">
+                <h3>Tech Summit 2026</h3>
+                <p class="meta">Organizer: TechCorp</p>
+                <p class="price">Rs. 3,999</p>
+                <div class="card-actions">
+                  <button
+                    class="btn outline view-details"
+                    data-title="Tech Summit 2026"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn primary open-book"
+                    data-title="Tech Summit 2026"
+                  >
+                    Book Tickets
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="event-card">
+              <img
+                src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg"
+                alt="Birthday"
+              />
+              <div class="event-body">
+                <h3>Retro Night: 90s Party</h3>
+                <p class="meta">Organizer: PartyHub</p>
+                <p class="price">Rs. 799</p>
+                <div class="card-actions">
+                  <button
+                    class="btn outline view-details"
+                    data-title="Retro Night: 90s Party"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn primary open-book"
+                    data-title="Retro Night: 90s Party"
+                  >
+                    Book Tickets
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="center">
+            <a href="#events" class="btn ghost">See All Events</a>
+          </div>
+        </section>
+
+        <section class="testimonials container">
+          <h2>What Our Clients Say</h2>
+          <div class="testimonial-viewport">
+            <blockquote class="testimonial">
+              <p>
+                "EventPlus made our movie premiere unforgettable — flawless
+                execution."
+              </p>
+              <cite>— Priya & Arjun</cite>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <p>"Easy booking, clear pricing, and great customer support."</p>
+              <cite>— TechCorp Events</cite>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <p>"Booked concert tickets in seconds. Highly recommended."</p>
+              <cite>— Rohit S.</cite>
+            </blockquote>
+          </div>
+        </section>
+      </section>
+
+      <!-- ABOUT SECTION  -->
+
+      <section id="about" class="page">
+        <div class="about-hero">
+          <div class="container">
+            <h1>About Book my Ticket</h1>
+            <p class="muted">
+              We connect people to memorable experiences trusted organizers,
+              transparent pricing, and a simple booking flow.
+            </p>
+          </div>
+        </div>
+        <div class="milestones container">
+          <h2>Milestones</h2>
+          <div class="milestone-grid">
+            <div class="milestone">
+              <strong>100+</strong><span>Events Managed</span>
+            </div>
+            <div class="milestone">
+              <strong>50k+</strong>
+              <span>Tickets Sold</span>
+            </div>
+            <div class="milestone">
+              <strong>4.8</strong>
+              <span>Average Rating</span>
+            </div>
+          </div>
+        </div>
+        <section class="mvv container">
+          <h2>Our Mission, Vision & Values</h2>
+          <div class="mvv-grid">
+            <div class="mvv-card">
+              <h3>Mission</h3>
+              <p>
+                Deliver effortless event discovery and reliable booking for
+                everyone.
+              </p>
+            </div>
+            <div class="mvv-card">
+              <h3>Vision</h3>
+              <p>
+                Be the most trusted platform for live experiences across India.
+              </p>
+            </div>
+            <div class="mvv-card">
+              <h3>Values</h3>
+              <p>Transparency, reliability, and customer first service.</p>
+            </div>
+          </div>
+        </section>
+        <section class="team container">
+          <h2>Meet the Team</h2>
+          <div class="team-grid">
+            <div class="team-member">
+              <img
+                src="https://pluspng.com/img-png/user-png-icon-big-image-png-2240.png"
+                alt="Team member"
+              />
+              <h4>MNO</h4>
+              <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+              <img
+                src="https://pluspng.com/img-png/user-png-icon-big-image-png-2240.png"
+                alt="Team member"
+              />
+              <h4>ABC</h4>
+              <p>Head of Operations</p>
+            </div>
+            <div class="team-member">
+              <img
+                src="https://pluspng.com/img-png/user-png-icon-big-image-png-2240.png"
+                alt="Team member"
+              />
+              <h4>XYZ</h4>
+              <p>Marketing Lead</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- CONTACT US SECTION  -->
+      <section id="contact" class="page">
+        <div class="contact-grid">
+          <div class="contact-form">
+            <h1>Contact Us</h1>
+            <p class="muted">
+              Send us message and we'll get back within 24hours.
+            </p>
+
+            <form id="contactForm">
+              <label for="cname">Name</label>
+              <input
+                id="cname"
+                name="name"
+                type="text"
+                placeholder="Your Name"
+                required
+              />
+              <small class="hint">Symbols not allowed</small>
+              <label for="cemail">Email</label>
+              <input
+                id="cemail"
+                name="email"
+                type="email"
+                placeholder="Your Email"
+                required
+              />
+              <label for="cmessage">Message</label>
+              <textarea
+                id="cmessage"
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn primary">Send Message</button>
+            </form>
+          </div>
+          <aside class="contact-info container">
+            <div class="contact-info"></div>
+            <h2>Get in Touch</h2>
+            <p>
+              <strong>Email:</strong
+              ><a href="mailto:hello@bookmyticket.email"
+                >hello@bookmyticket.email</a
+              >
+            </p>
+            <p><strong>Phone:</strong> +91 12345 67890</p>
+            <p><strong>Support:</strong> Mon-Fri, 9:00-18:00</p>
+            <div class="socials">
+              <a href="#" class="social">WhatsApp</a>
+              <a href="#" class="social">Instagram</a>
+              <a href="#" class="social">Facebook</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- EVENTS SECTION  -->
+
+      <section id="events" class="page">
+        <div class="events-header">
+          <h1>All Events</h1>
+          <div class="search-filters">
+            <input type="text" id="search" placeholder="Search events..." />
+            <select id="filter">
+              <option value="">All Categories</option>
+              <option value="Stand-Up & Comedy">Stand-Up & Comedy</option>
+              <option value="Corporate Event">Corporate Event</option>
+              <option value="Movie Premier">Movie Premier</option>
+              <option value="Concert & Live Music">Concert & Live Music</option>
+              <option value="Party">Party</option>
+              <option value="Launch Event">Launch Event</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="events-list">
+          <article class="event-card small">
+            <img
+              src="https://images.pexels.com/photos/9547593/pexels-photo-9547593.jpeg"
+              alt="StandUp Comedy"
+            />
+            <div class="event-body">
+              <h3>Stand-Up Comedy</h3>
+              <p class="organizer">Organizer: Comedy Central</p>
+              <p class="price">Rs. 1,499</p>
+              <div class="card-actions">
+                <button
+                  class="btn outline view-details"
+                  data-title="Stand-Up Comedy"
+                >
+                  View Details
+                </button>
+                <button
+                  class="btn primary open-book"
+                  data-title="Stand-Up Comedy"
+                >
+                  Book Tickets
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="event-card small">
+            <img
+              src="https://images.pexels.com/photos/38041486/pexels-photo-38041486.jpeg"
+              alt="Tech Week"
+            />
+            <div class="event-body">
+              <h3>London Tech Week</h3>
+              <p class="meta">Organizer: Elegant Affairs</p>
+              <p class="price">Free</p>
+              <div class="card-actions">
+                <button
+                  class="btn outline view-details"
+                  data-title="London Tech Week"
+                >
+                  View Details
+                </button>
+                <button
+                  class="btn primary open-book"
+                  data-title="London Tech Week"
+                >
+                  Book Tickets
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="event-card small">
+            <img
+              src="https://images.pexels.com/photos/19451448/pexels-photo-19451448.jpeg"
+              alt="Corporate"
+            />
+            <div class="event-body">
+              <h3>Tech Summit 2026</h3>
+              <p class="meta">Organizer: TechCorp</p>
+              <p class="price">Rs. 3,999</p>
+              <div class="card-actions">
+                <button
+                  class="btn outline view-details"
+                  data-title="Tech Summit 2026"
+                >
+                  View Details
+                </button>
+                <button
+                  class="btn primary open-book"
+                  data-title="Tech Summit 2026"
+                >
+                  Book Tickets
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="event-card small">
+            <img
+              src="https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg"
+              alt="Concert"
+            />
+            <div class="event-body">
+              <h3>Summer Beats Festival</h3>
+              <p class="meta">Organizer: LiveNation</p>
+              <p class="price">Rs. 1,499</p>
+              <div class="card-actions">
+                <button
+                  class="btn outline view-details"
+                  data-title="Summer Beats Festival"
+                >
+                  View Details
+                </button>
+                <button
+                  class="btn primary open-book"
+                  data-title="Summer Beats Festival"
+                >
+                  Book Tickets
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="event-card small">
+            <img
+              src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg"
+              alt="Birthday"
+            />
+            <div class="event-body">
+              <h3>Retro Night: 90s Party</h3>
+              <p class="meta">Organizer: PartyHub</p>
+              <p class="price">Rs. 799</p>
+              <div class="card-actions">
+                <button
+                  class="btn outline view-details"
+                  data-title="Retro Night: 90s Party"
+                >
+                  View Details
+                </button>
+                <button
+                  class="btn primary open-book"
+                  data-title="Retro Night: 90s Party"
+                >
+                  Book Tickets
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- LOGIN / REGISTER SECTION  -->
+
+      <section id="auth" class="page">
+        <div class="auth-card">
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="login">Login</button>
+            <button class="tab-btn" data-tab="register">Register</button>
+          </div>
+
+          <div class="tab-panels">
+            <form id="loginPanel" class="tab-panel active">
+              <div class="loginPanel-container">
+                <label for="loginEmail">Email</label>
+                <input id="loginEmail" type="email" required />
+                <label for="loginPass">Password</label>
+                <input id="loginPass" type="password" required />
+                <div class="auth-actions">
+                  <a href="#" class="muted small">Forgot password?</a>
+                  <button class="btn primary" type="submit">Login</button>
+                </div>
+              </div>
+            </form>
+            <form id="registerPanel" class="tab-panel">
+              <div class="registerPanel-container">
+                <label for="registrationName">Full Name</label>
+                <input
+                  id="registrationName"
+                  type="text"
+                  placeholder="Enter your name"
+                  required
+                />
+                <small class="hint">Symbols not allowed</small>
+                <label for="registrationEmail">Email</label>
+                <input
+                  id="registrationEmail"
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <label for="registrationPassword">Password</label>
+                <input
+                  id="registrationPassword"
+                  type="text"
+                  placeholder="Enter your password"
+                  required
+                />
+                <label for="registrationConfirmPassword"
+                  >Confirm Password</label
+                >
+                <input
+                  id="registrationConfirmPassword"
+                  type="text"
+                  placeholder="Enter your password again"
+                  required
+                />
+                <small class="hint">Wrong password did not matched.</small>
+                <button class="btn primary" type="submit">
+                  Create Account
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Book my Ticket. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
