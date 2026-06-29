@@ -22,7 +22,13 @@
             <img src="Assests/logo.png" alt="Logo" class="logo" />
             <span>Book my Ticket</span>
           </a>
-          <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+          <button
+            class="nav-toggle"
+            aria-label="Toggle navigation"
+            onclick="toggleNav()"
+          >
+            ☰
+          </button>
           <ul class="nav-links">
             <li>
               <a href="#home" class="nav-link">Home</a>
@@ -334,7 +340,9 @@
                 placeholder="Your Name"
                 required
               />
-              <small class="hint">Symbols not allowed</small>
+              <small class="hint"
+                >Should only contain letters and spaces.</small
+              >
               <label for="cemail">Email</label>
               <input
                 id="cemail"
@@ -535,9 +543,19 @@
             <form id="loginPanel" class="tab-panel active">
               <div class="loginPanel-container">
                 <label for="loginEmail">Email</label>
-                <input id="loginEmail" type="email" required />
+                <input
+                  id="loginEmail"
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                />
                 <label for="loginPass">Password</label>
-                <input id="loginPass" type="password" required />
+                <input
+                  id="loginPass"
+                  type="password"
+                  placeholder="Enter your password"
+                  required
+                />
                 <div class="auth-actions">
                   <a href="#" class="muted small">Forgot password?</a>
                   <button class="btn primary" type="submit">Login</button>
@@ -553,7 +571,9 @@
                   placeholder="Enter your name"
                   required
                 />
-                <small class="hint">Symbols not allowed</small>
+                <small class="hint"
+                  >Should only contain letters and spaces.</small
+                >
                 <label for="registrationEmail">Email</label>
                 <input
                   id="registrationEmail"
@@ -564,7 +584,7 @@
                 <label for="registrationPassword">Password</label>
                 <input
                   id="registrationPassword"
-                  type="text"
+                  type="password"
                   placeholder="Enter your password"
                   required
                 />
@@ -573,11 +593,11 @@
                 >
                 <input
                   id="registrationConfirmPassword"
-                  type="text"
+                  type="password"
                   placeholder="Enter your password again"
                   required
                 />
-                <small class="hint">Wrong password did not matched.</small>
+                <small class="hint">Passwords do not match.</small>
                 <button class="btn primary" type="submit">
                   Create Account
                 </button>

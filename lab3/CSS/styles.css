@@ -52,6 +52,25 @@ input.error {
   border: 2px solid red;
 }
 
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal.active {
+  display: flex;
+}
+.modal-content {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+}
+
 .site-nav {
   position: sticky;
   top: 0;
@@ -303,7 +322,7 @@ input.error {
 }
 .events-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1rem;
 }
 .event-card.small img {
@@ -557,9 +576,26 @@ input.error {
   }
   .nav-links {
     display: none;
+    position: fixed;
+    inset: 53px 0 0 0;
+    background: #fff;
+    padding: 1rem;
+    overflow-y: auto;
+    font-size: 0.8em;
+    font-family: "DM Sans", sans-serif;
+  }
+  .nav-links a {
+    padding: 0.4rem;
   }
   .nav-toggle {
     display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  body.nav-open .nav-links {
+    display: flex;
   }
   .hero h1,
   .about-hero h1,
@@ -579,5 +615,9 @@ input.error {
   .search-filters {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .auth-card,
+  .events-header {
+    margin-top: 2rem;
   }
 }
